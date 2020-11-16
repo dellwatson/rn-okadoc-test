@@ -220,7 +220,7 @@ const Input = ({ title, setInput, input }: any) => (
 )
 
 
-const getNprimes = (n) => {
+export const getNprimes = (n) => {
   const arr = [];
   let i = 2
 
@@ -246,7 +246,7 @@ const getNprimes = (n) => {
   }
 }
 
-const getFibonnaci = n =>
+export const getFibonnaci = n =>
   [...Array(n)].reduce(
     (acc, val, i) => acc.concat(i > 1 ? acc[i - 1] + acc[i - 2] : i),
     []
